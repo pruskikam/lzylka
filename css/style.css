@@ -48,6 +48,29 @@ ol,
 	font-family: 'Roboto', Arial, serif;
 }
 
+.painting-container {
+	position: relative;
+}
+.overlay {
+	z-index: 1;
+	position: absolute;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.9);
+	color: #f1f1f1;
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+	opacity: 0;
+	transition: 0.5s ease;
+	border-radius: 5px;
+	opacity: 0;
+	font-size: 1.6rem;
+}
+
+.painting-container:hover .overlay {
+	opacity: 1;
+}
+
 h1,
 h2,
 h3,
@@ -122,9 +145,8 @@ figure {
 	outline: none;
 }
 #fh5co-header nav ul li.active a {
-
 	color: black !important;
-  font-weight: 500;
+	font-weight: 500;
 }
 
 .fh5co-projects-feed,
@@ -161,22 +183,6 @@ figure {
 .fh5co-projects-feed .fh5co-project > a:active h2,
 .fh5co-projects-feed .fh5co-project > a:focus h2 {
 	color: #000;
-}
-
-.masonry,
-.masonry .masonry-brick {
-	-webkit-transition-duration: 0.7s;
-	transition-duration: 0.7s;
-}
-
-.masonry {
-	-webkit-transition-property: height, width;
-	transition-property: height, width;
-}
-
-.masonry .masonry-brick {
-	-webkit-transition-property: left, right, top;
-	transition-property: left, right, top;
 }
 
 .page-content {
@@ -222,7 +228,7 @@ figure {
 #fh5co-footer {
 	float: left;
 	width: 100%;
-	background: #E69A4F;
+	background: #e69a4f;
 	padding-top: 20px;
 	margin-top: 10px;
 	padding-bottom: 20px;
@@ -279,46 +285,43 @@ figure {
 
 /*# sourceMappingURL=style.css.map */
 
-
 .row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
 }
 
-
 .column {
-  flex: 25%;
-  max-width: 33.3%;
-  padding: 0 4px;
+	flex: 25%;
+	max-width: 33.3%;
+	padding: 0 4px;
 }
 
 .column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-  filter: grayscale(1) brightness(0.5);
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s linear;
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+	filter: grayscale(1) brightness(0.5);
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s linear;
 }
 .column img:hover {
-  filter: grayscale(0);
+	filter: grayscale(0);
 }
 @media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
+	.column {
+		flex: 50%;
+		max-width: 50%;
+	}
 }
 
-
 @media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-  .column img {
-    filter: grayscale(0) brightness(1);
-  }
+	.column {
+		flex: 100%;
+		max-width: 100%;
+	}
+	.column img {
+		filter: grayscale(0) brightness(1);
+	}
 }
