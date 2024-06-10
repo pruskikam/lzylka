@@ -65,9 +65,6 @@ i,
 figure {
 	margin-bottom: 2em;
 }
-.logo-image {
-	max-height: 800px;
-}
 
 ::-webkit-selection {
 	color: #fcfcfc;
@@ -89,7 +86,7 @@ figure {
 	margin-bottom: 30px;
 }
 #fh5co-header #fh5co-logo img {
-	max-width: 100%;
+	max-width: 90%;
 }
 #fh5co-header nav {
 	padding-top: 20px;
@@ -226,7 +223,6 @@ figure {
 	float: left;
 	width: 100%;
 	background: #E69A4F;
-
 	padding-top: 20px;
 	margin-top: 10px;
 	padding-bottom: 20px;
