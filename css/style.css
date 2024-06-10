@@ -65,6 +65,9 @@ i,
 figure {
 	margin-bottom: 2em;
 }
+.logo-image {
+	max-height: 800px;
+}
 
 ::-webkit-selection {
 	color: #fcfcfc;
